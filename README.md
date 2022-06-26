@@ -9,6 +9,8 @@
 
 ## Usage
 
+- _Before usage, please set your screen resolution to `1366 x 768`, for more correct work of the application_
+
 **Development**
 
 `npm run start:dev`

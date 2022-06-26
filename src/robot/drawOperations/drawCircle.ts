@@ -2,9 +2,10 @@ import robot from 'robotjs'
 
 const drawCircle = (data: string[]) => {
   const [radius] = data
-  const numRadius = Number(radius)  / 1.25
+  const numRadius = Number(radius)
   const mousePos = robot.getMousePos();
   robot.moveMouse(mousePos.x + numRadius, mousePos.y)
+  robot.mouseClick('left')
   robot.mouseToggle('down')
 
   for (let i = 0; i <= Math.PI * 2; i += 0.01) {

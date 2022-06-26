@@ -2,9 +2,10 @@ import robot from 'robotjs'
 
 const drawRectangle = (data: string[]) => {
   const [width, height] = data
-  const numWidth = Number(width)  / 1.25
-  const numHeight = Number(height) / 1.25
+  const numWidth = Number(width)
+  const numHeight = Number(height)
   const {x, y} = robot.getMousePos();
+  robot.mouseClick('left')
   robot.mouseToggle('down')
   robot.moveMouseSmooth(x + numWidth, y)
   robot.moveMouseSmooth(x + numWidth, y + numHeight)

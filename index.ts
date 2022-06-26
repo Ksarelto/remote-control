@@ -38,6 +38,19 @@ socket.on('connection', ws => {
     duplex.write(frontMessage(command, response))
     returnedMessage(command, response)
   })
+
+  duplex.on('error', (err) => {
+    console.log(err)
+  })
+
+  socket.on('close', () => {
+    console.log('Server is closed');
+    duplex.end();
+  });
+
+  socket.on('error', (error) => {
+    console.log(error.message);
+  });
 })
 
 
