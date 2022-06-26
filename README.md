@@ -1,30 +1,32 @@
 # RSSchool NodeJS websocket task template
+
 > Static http server and base task packages.
 
 ## Installation
+
 1. Clone/download repo
 2. `npm install`
 
 ## Usage
+
+- _Before usage, please set your screen resolution to `1366 x 768`, for more correct work of the application_
+
 **Development**
 
 `npm run start:dev`
 
-* App served @ `http://localhost:8181` with nodemon
+- App served @ `http://localhost:3000` with nodemon
 
 **Production**
 
 `npm run start`
 
-* App served @ `http://localhost:8181` without nodemon
+- App served @ `http://localhost:3000` without nodemon
 
 ---
 
-**All commands**
+**WebSocket**
 
-Command | Description
---- | ---
-`npm run dev` | App served @ `http://localhost:8181` with nodemon
-`npm run start` | App served @ `http://localhost:8181` without nodemon
+- Websocket is available at ws://localhost:8080
 
 **Note**: replace `npm` with `yarn` in `package.json` if you use yarn.
